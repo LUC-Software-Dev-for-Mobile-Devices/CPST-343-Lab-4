@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CardApp.Models"
+             x:Class="CardApp.CardView">
+
+    <StackLayout>
+        <CollectionView x:Name="cardcollectionView" ItemsSource="{Binding Card}">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Padding="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        
+                            <Image Source="{Binding Image}" 
+                               Grid.RowSpan="2" 
+                               Grid.Column="0"
+                               WidthRequest="60" 
+                               HeightRequest="70" 
+                                Margin="0,0,10,0">
+                        </Image>
+                        <Label Grid.Column="1" 
+                                  Text="{Binding Name}"
+                                  FontAttributes="Bold"
+                                  VerticalOptions="CenterAndExpand"
+                                  Margin="0,0,10,0"/>
+                        <Label Grid.Column="2"
+                                  Text="{Binding Position}"
+                                  FontSize="16"
+                                  VerticalOptions="CenterAndExpand"
+                                  Margin="0,0,10,0"/>
+
+                        <Label Grid.Column="3"
+                                  Text="{Binding Team}"
+                                  FontSize="16"
+                                  VerticalOptions="CenterAndExpand"
+                                  Margin="0,0,10,0"/>
+
+                     
+                    </Grid>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+
+    </StackLayout>
+
+
+</ContentPage>
