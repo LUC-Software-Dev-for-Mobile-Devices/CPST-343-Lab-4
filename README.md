@@ -42,7 +42,7 @@ The lab will contribute to fulfilling the weekly objectives listed below.
    1. Navigate to [https://instructorc.github.io/CPST343_lab4_resource/basketball_cards.json](https://instructorc.github.io/CPST343_lab4_resource/basketball_cards.json)
    2. Copy the JSON code URL and paste it into [https://json2csharp.com/](https://json2csharp.com/) to generate a new **Card.cs** class
       - By changing the property names to the key values within our JSON file, this helps us bypassing installing a third party to synchronize JSON key names with C# property names.
-4. Add the following code to your constructor and remove code that instantiates an object and adds objects to a list.
+4. Make the following adjustments to constructor of the CardView.xaml.cs file  and remove the existing code in constructor that instantiates an object and adds objects to a list.
    - Add
    ```csharp
         Task.Run(async () =>
