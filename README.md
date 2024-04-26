@@ -45,6 +45,7 @@ The lab will contribute to fulfilling the weekly objectives listed below.
 4. Make the following adjustments to constructor of the CardView.xaml.cs file  and remove the existing code in constructor that instantiates an object and adds objects to a list.
    - Add
    ```csharp
+        InitializeComponent();
         Task.Run(async () =>
         {
             var result = await getCardsFromAPI();
