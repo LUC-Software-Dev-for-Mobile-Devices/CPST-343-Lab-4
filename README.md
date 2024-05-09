@@ -38,7 +38,7 @@ The lab will contribute to fulfilling the weekly objectives listed below.
         }
     }
 ```
-3. Generate a new Card class for the Models folder
+3. Open the Card class in the Models folder
    1. Navigate to [https://instructorc.github.io/CPST343_lab4_resource/basketball_cards.json](https://instructorc.github.io/CPST343_lab4_resource/basketball_cards.json)
    2. Copy the JSON code URL and paste it into [https://json2csharp.com/](https://json2csharp.com/) to generate a new **Card.cs** class
       - By changing the property names to the key values within our JSON file, this helps us bypassing installing a third party to synchronize JSON key names with C# property names.
